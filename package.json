@@ -11,6 +11,10 @@
       "require": "./lib/index.js"
     }
   },
+  "files": [
+    "README.md",
+    "lib"
+  ],
   "scripts": {
     "build": "nanobundle build",
     "clean": "nanobundle clean"
