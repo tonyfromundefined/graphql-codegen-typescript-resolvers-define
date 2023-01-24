@@ -1,0 +1,30 @@
+{
+  "name": "graphql-codegen-typescript-resolvers-define",
+  "repository": "https://github.com/tonyfromundefined/graphql-codegen-typescript-resolvers-define",
+  "version": "0.1.0",
+  "type": "commonjs",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "require": "./lib/index.js"
+    }
+  },
+  "scripts": {
+    "build": "nanobundle build"
+  },
+  "dependencies": {
+    "change-case": "^4.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "graphql": "^16.6.0",
+    "nanobundle": "^1.3.6",
+    "typescript": "^4.9.4"
+  },
+  "peerDependencies": {
+    "graphql": ">=15"
+  },
+  "packageManager": "yarn@3.3.1"
+}
