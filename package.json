@@ -12,7 +12,8 @@
     }
   },
   "scripts": {
-    "build": "nanobundle build"
+    "build": "nanobundle build",
+    "clean": "nanobundle clean"
   },
   "dependencies": {
     "change-case": "^4.1.2"
