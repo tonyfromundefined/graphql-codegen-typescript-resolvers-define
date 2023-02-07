@@ -48,6 +48,17 @@ module.exports = {
         lines.push("}");
       });
     }
+    if (isObjectType(typeMap.Subscription)) {
+      Object.keys(typeMap.Subscription.getFields()).forEach((subscriptionField) => {
+        lines.push(
+          `export function define${pascalCase(
+            subscriptionField,
+          )}SubscriptionResolver(resolver: SubscriptionResolvers["${subscriptionField}"]) {`,
+        );
+        lines.push(`  return resolver;`);
+        lines.push("}");
+      });
+    }
 
     lines.push(`export function defineResolvers(resolvers: Resolvers) {`);
     lines.push(`  return resolvers;`);
