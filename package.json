@@ -1,8 +1,9 @@
 {
   "name": "graphql-codegen-typescript-resolvers-define",
   "repository": "https://github.com/tonyfromundefined/graphql-codegen-typescript-resolvers-define",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "type": "commonjs",
+  "license": "MIT",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "exports": {
@@ -33,4 +34,3 @@
   },
   "packageManager": "yarn@3.3.1"
 }
-
